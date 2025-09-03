@@ -20,7 +20,7 @@ COPY requirements.txt .
         #  Ця крапка в кінці цієї інструкції  означає що файл requirements.txt 
         #  повинен знаходитись в кореневій директорії самого проекту.
         #  Тобто в контейнері тепер буде файл /app/requirements.txt
-RUN pip install --no-cashe-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
         #  Тобто не створювати в кеш пам'яті  копії директорії.
         #  Ключ --no-cache-dir означає що pip не буде зберігати кеш завантажених пакетів.
         #  Тобто для процесу інсталяції пакетів  кеш не буде використовуватись.
